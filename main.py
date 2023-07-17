@@ -50,7 +50,7 @@ def client_sender():
             response = ""
 
             while recv_len:
-                data = client.recv(4096).decode('utf-8')
+                data = client.recv(4096).decode("utf-8").encode('cp1251').decode('cp866')
                 recv_len = len(data)
                 response += data
 
